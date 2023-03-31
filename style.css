@@ -4,20 +4,21 @@
     display:flex;
 }
 
-.btn
+.tab-btn
 {
-    font-size: 32px;
+    font-size: 28px;
     margin:70px;
-    
+    cursor: pointer; 
 
 }
 
 .buttons
 {
+    height:200px;
     background-color: lightgrey;
     display:flex;
     justify-content: space-between;
-    padding:auto;
+    padding:0;
     width:800px;
 
 }
@@ -34,12 +35,11 @@ body{
     background-color: rgb(161, 183, 197);
 }
 
-
-#History, #Vision, #Goals
+.content
 {
-    display: flex;
+    display: none;
     flex-direction: column;
-    width:250px;
+    width:500px;
     margin:20px;
    
 }
@@ -50,20 +50,23 @@ body{
     flex-direction: row;
 }
 
-.btn:hover
+.tab-btn:hover
 {
-    background-color: blueviolet;
+    background-color: rgb(185, 166, 202);
     color:white;
     font-weight: bold;
 
 }
 
-.content
+
+
+.tab-btn .active
 {
-    display:none;
+    background-color: white;
 }
 
-.content.active
+.active
 {
-    display: block;
+    display:flex;
 }
+
